@@ -2,10 +2,10 @@
 
 ## Features:
 
-- Reads Exif Data for an array of files and returns an array of images
+- You pass a folder name and receive image information of all the visual files that can be found in the folder and its dubdirectories 
 
-```html
- 	function getImages(list, callback)
+```html 
+ 	function visualData([folder], [callback])
 ```	
 
 - The list is an array of image files, ionclding path information
@@ -24,7 +24,6 @@
 Here is an example
 
 ```html
-var list = ["images1/IMG_4358.jpg", "images1/IMG_4363.jpg", "images1/IMG_4370.jpg", "images1/IMG_4375.jpg" ];
 
 function done(result)
     {
@@ -32,6 +31,6 @@ function done(result)
     }
 
 
-visualData(list, done);
+visualData("folder", done);
 
 ```	
