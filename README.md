@@ -8,7 +8,7 @@
  	function visualData([folder], [callback])
 ```	
 
-- The callback receives an array of objects with the following structure:
+- The callback receives a timestamp sorted array of objects with the following structure:
 
   
 ```html
