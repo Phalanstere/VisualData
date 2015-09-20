@@ -10,6 +10,7 @@
   "dependencies": {
 	"q": "^1.4.1",
 	"q-foreach": "^0.0.3",
+	"recursive-readdir": "^1.2.1",
 	"exif": "^0.4.0"
   },
   "repository": {
@@ -17,6 +18,6 @@
     "url": "git+https://github.com/Phalanstere/VisualTimebar.git"
   },
   "devDependencies": {
-    "browserify-css": "~0.7.1"
+
   }
 }

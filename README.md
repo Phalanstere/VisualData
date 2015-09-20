@@ -18,3 +18,20 @@
         time = converted to a timestamp
         this.exif  = exif information
 ```	
+
+
+
+Here is an example
+
+```html
+var list = ["images1/IMG_4358.jpg", "images1/IMG_4363.jpg", "images1/IMG_4370.jpg", "images1/IMG_4375.jpg" ];
+
+function done(result)
+    {
+    if (result.length > 0) console.log(result[0].exif.ExposureTime);        
+    }
+
+
+visualData(list, done);
+
+```	

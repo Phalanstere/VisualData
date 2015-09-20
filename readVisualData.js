@@ -87,7 +87,7 @@ var fs = require('fs'),
      img = new ImageData(obj.file, obj.data.exif);
      
      images.push(img);
-     console.log( util.inspect(img) );  
+     // console.log( util.inspect(img) );  
      
      deferred.resolve();
      return deferred.promise;
@@ -116,7 +116,7 @@ var fs = require('fs'),
           if (err) return console.log(err);
           else
             { 
-            console.log("ERFOLG");
+            console.log("success");
             if (callback) callback.call(this, images);
             }
         });
@@ -137,6 +137,7 @@ var fs = require('fs'),
 
     function getImageData(array, callback)
     {
+    "use strict";    
     array.map( doSomething);   
     // this is not fully satisfying - I collect the promises and then do the writeFile via timeout
     setTimeout(function(){
@@ -154,7 +155,6 @@ var fs = require('fs'),
 
 
 
-    getImageData(list);
 
    /////////////////////// OBSOLET //////////////////////////////
 
@@ -189,4 +189,4 @@ var fs = require('fs'),
 
     // getImages(list, test);
 
-    module.exports = export = getImages;
+    module.exports = exports = getImages;
