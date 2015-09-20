@@ -2,13 +2,12 @@
 
 ## Features:
 
-- You pass a folder name and receive image information of all the visual files that can be found in the folder and its dubdirectories 
+- You pass a folder name and receive image information of all the visual files that can be found in the folder and its subdirectories 
 
 ```html 
  	function visualData([folder], [callback])
 ```	
 
-- The list is an array of image files, ionclding path information
 - The callback receives an array of objects with the following structure:
 
   
@@ -24,6 +23,7 @@
 Here is an example
 
 ```html
+
 
 function done(result)
     {
