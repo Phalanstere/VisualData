@@ -1,0 +1,22 @@
+{
+  "name": "VisualTimebar",
+  "description": "A visual Diary",
+  "version": "0.0.1",
+  "author": "Phalanstere",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Phalanstere/VisualTimebar/issues"
+  },
+  "dependencies": {
+	"q": "^1.4.1",
+	"q-foreach": "^0.0.3",
+	"exif": "^0.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phalanstere/VisualTimebar.git"
+  },
+  "devDependencies": {
+    "browserify-css": "~0.7.1"
+  }
+}
