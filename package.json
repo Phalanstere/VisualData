@@ -1,11 +1,11 @@
 {
   "name": "visual-data",
   "description": "reads images from a given folder (including subfolders) and return an object with timestamp and exif information",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "author": "Phalanstere",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Phalanstere/VisualTimebar/issues"
+    "url": "https://github.com/Phalanstere/VisualData/issues"
   },
     "keywords": [
     "exif"
@@ -16,6 +16,7 @@
 	"recursive-readdir": "^1.2.1",
 	"exif": "^0.4.0"
   },
+    "main": "./lib",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Phalanstere/VisualData"
