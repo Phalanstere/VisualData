@@ -1,8 +1,19 @@
-visualData      = require("./lib/visualData");
+util      = require("util");
 
-function done(result)
+visualData      = require("./lib/index.js");
+
+function me(result)
     {
-    if (result.length > 0) console.log(result[0].exif.ExposureTime);        
+    var i;    
+    console.log("ME " + result.length);    
+   
+    for (i = 0; i < result.length; i++) {
+        console.log( result[i].file);
+        };
+           
     }
 
-visualData("folder", done);
+
+util.inspect(console.log(visualData ));
+
+visualData("images1", me);
